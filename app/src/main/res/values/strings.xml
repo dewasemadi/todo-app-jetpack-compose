@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">todo</string>
+    <string name="greeting">What\'s up, Putu?</string>
+    <string name="motivation">Hope you\'re feeling better today!</string>
+    <string name="empty_todo">You don\'t have any todo yet</string>
+    <string name="progress">%1$d to-do in progress 🔥</string>
+    <string name="almost_done">Almost done! 😭</string>
+    <string name="all_done">All done! 🥳</string>
+    <string name="delete">Todo deleted</string>
+    <string name="fill_todo_field">Please fill todo field!</string>
+    <string name="delete_all_title">Delete All To-Do</string>
+    <string name="delete_all_desc">Are you sure want to delete all to-do?</string>
+    <string name="yes">Yes</string>
+    <string name="save">Save</string>
+</resources>
