@@ -71,7 +71,8 @@ class MainActivity : ComponentActivity() {
                             Banner(
                                 stringResource(R.string.greeting),
                                 stringResource(R.string.motivation),
-                                R.drawable.banner)
+                                R.drawable.banner
+                            )
                         },
                         frontLayerContent = {
                             if (isShowAddOrEditTodoDialog) {
@@ -252,13 +253,13 @@ fun AddOrEditTodoDialogView(
         desc = desc,
         date = date,
         time = time,
-        confirmText = stringResource(R.string.save),
         isChecked = isWithDeadline,
+        confirmText = stringResource(R.string.save),
         onTodoChange = { mainViewModel.onTodoChange(it) },
         onDescChange = { mainViewModel.onDescChange(it) },
         onDateChange = { mainViewModel.onDateChange(it) },
         onTimeChange = { mainViewModel.onTimeChange(it) },
-        onChecked = {
+        onCheckedChange = {
             val (currentDate, currentTime) = currentDateAndTime()
 
             mainViewModel.apply {

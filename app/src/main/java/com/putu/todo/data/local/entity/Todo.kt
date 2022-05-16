@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "todo")
 data class Todo(
     @ColumnInfo(name = "todo")
-    val task: String,
+    val todo: String,
 
     @ColumnInfo(name = "description")
     val description: String,

@@ -29,7 +29,7 @@ fun AddOrEditTodoDialog(
     time: String,
     isChecked: Boolean,
     confirmText: String,
-    onChecked: (Boolean) -> Unit,
+    onCheckedChange: (Boolean) -> Unit,
     onTodoChange: (String) -> Unit,
     onDescChange: (String) -> Unit,
     onDateChange: (String) -> Unit,
@@ -138,7 +138,7 @@ fun AddOrEditTodoDialog(
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.End
                     ){
-                        Checkbox(checked = isChecked, onCheckedChange = onChecked)
+                        Checkbox(checked = isChecked, onCheckedChange = onCheckedChange)
                         Text(text = "Deadline", style = TextStyle(color = Color.Gray))
                     }
                 }
